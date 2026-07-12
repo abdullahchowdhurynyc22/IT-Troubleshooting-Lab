@@ -69,20 +69,33 @@ Confirmed ongoing firewall protection states across the architecture and validat
 
 ## Screenshots
 
+## Screenshots
+
 ### Lab Overview
-![Lab Overview](screenshots/lab-overview.png)
+<img width="672" height="640" alt="Image" src="https://github.com/user-attachments/assets/9b9e42bb-2218-44f5-91c8-a53ebb509b61" />
 
 ### Windows Performance Troubleshooting
-![Windows Performance Troubleshooting](screenshots/performance-troubleshooting.png)
+<img width="672" height="531" alt="Image" src="https://github.com/user-attachments/assets/e1a40618-9fbc-4319-ada1-2433866580c4" />
+<img width="673" height="530" alt="Image" src="https://github.com/user-attachments/assets/52c0d46e-d4fa-4703-9cc8-4865b8d96d63" />
+
 
 ### DNS Troubleshooting
-![DNS Troubleshooting](screenshots/dns-troubleshooting.png)
+<br><img width="422" height="606" alt="Image" src="https://github.com/user-attachments/assets/0bd90e9b-b938-41b0-8ed4-211b052d11bf" /></br>
+
+<br><img width="421" height="569" alt="Image" src="https://github.com/user-attachments/assets/2b84034e-a7ac-47b1-951e-3edec8c9f4a4" /></br>
+
+<br><img width="420" height="600" alt="Image" src="https://github.com/user-attachments/assets/2b9830ba-51c1-4e7b-b716-1bea21fdc2e6" /></br>
 
 ### DHCP Verification
-![DHCP Verification](screenshots/dhcp-verification.png)
+<img width="421" height="637" alt="Image" src="https://github.com/user-attachments/assets/0be3af55-1f51-4443-8d5d-f2b6e2da4988" />
 
 ### Remote Support
-![Remote Support](screenshots/remote-support.png)
+<img width="421" height="651" alt="Image" src="https://github.com/user-attachments/assets/7b8e8dab-032a-4c88-9cdc-2f48f0b283e1" />
+
+
+
 
 ### Security and Final Validation
-![Security and Final Validation](screenshots/security-validation.png)
+<img width="417" height="644" alt="Image" src="https://github.com/user-attachments/assets/31e44c04-fd4e-46d6-accb-f1a2ee2f1f34" />
+
+
