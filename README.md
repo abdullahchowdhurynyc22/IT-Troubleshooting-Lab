@@ -66,10 +66,78 @@ Established secure remote command-line access to the Ubuntu Server instance from
 Confirmed ongoing firewall protection states across the architecture and validated network wide functionality following all corrective actions.
 
 ---
+# Root Cause Analysis: Windows DNS Resolution Failure
+
+## Overview
+
+One of the primary issues identified during this lab was a DNS resolution failure affecting the Windows 11 client. While communication with internal resources remained functional, the client was unable to resolve external domain names.
+
+---
+
+## Problem
+
+Running the following command:
+
+```powershell
+nslookup google.com
+```
+
+returned a timeout error:
+
+```
+*** Request to UnKnown timed-out
+DNS request timed out.
+```
+
+Despite this, the client could still communicate with internal systems on the network, indicating that basic network connectivity was intact.
+
+---
+
+## Root Cause
+
+The Windows client was automatically prioritizing an **IPv6 link-local DNS server** advertised by the gateway. Because this DNS server was not configured to provide external name resolution, DNS queries failed before reaching the intended Active Directory DNS server.
+
+The correct DNS server configured for the lab environment was:
+
+```
+192.168.10.20
+```
+
+---
+
+## Resolution
+
+To correct the issue:
+
+- Disabled IPv6 on the Windows client network adapter.
+- Ensured the client used the internal Active Directory DNS server (`192.168.10.20`) for name resolution.
+- Renewed the network configuration and verified DNS settings.
+
+---
+
+## Validation
+
+After the configuration change:
+
+- `nslookup google.com` completed successfully.
+- External domain names resolved correctly.
+- Internet connectivity was restored.
+- Internal network services continued to function normally.
+
+---
+
+## Skills Demonstrated
+
+- DNS troubleshooting
+- Windows network configuration
+- IPv4/IPv6 diagnostics
+- Root cause analysis
+- Enterprise troubleshooting methodology
+- Post-remediation validation
 
 ## Screenshots
 
-## Screenshots
+
 
 ### Lab Overview
 <img width="672" height="640" alt="Image" src="https://github.com/user-attachments/assets/9b9e42bb-2218-44f5-91c8-a53ebb509b61" />
